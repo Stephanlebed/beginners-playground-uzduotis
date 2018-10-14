@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>InviteTravel</title>
+    <link rel="stylesheet" type="text/css" href="css/task-style.css">
+</head>
+<body>
+<div id="page-frame">
+    <div class="header"></div>
+    <div class="slogan"></div>
+    <div class="quotes"></div>
+    <div class="new-list"></div>
+    <div class="list-items"></div>
+    <div class="footer"></div>
+</div>
+
+<script id="template-info" type="text/x-handlebars-template">
+
+            <div class="d-block">
+                <div id="logo" class="d-inline-block fl">{{navLogo}}</div>
+                <div class="d-inline-block fr">
+                    {{#each navItems}}
+                    <a href="{{navLink}}">{{navTitle}}</a>
+                    {{/each}}
+                </div>
+            </div>
+
+            <div class="area-title d-block">
+                <h1>{{slogan-phrase}}</h1>
+                <div class="quote">
+                    {{slogan-quote}}
+                </div>
+            </div>
+
+            <div class="area-quotes">
+                <p>{{quoteOne}}</p>
+                <p>{{quoteTwo}}</p>
+            </div>
+
+            <div class="new-list-word">
+            <h2>{{newListWord}}</h2>
+            </div>
+
+           <div class="">
+            {{footerWord}}
+            </div>
+
+
+
+</script>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>
